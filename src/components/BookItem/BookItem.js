@@ -1,15 +1,15 @@
 import React from "react";
 import "./BookItem.css";
 
-export default function BookItem(props) {
+export default function BookItem({ author, price, description }) {
   return (
     <div>
       <h2>props.title</h2>
       <div className="itemWrapper">
         <img src="" alt="" />
-        <legend>Author:props.author</legend>
-        <p>Price:props.price</p>
-        <p>props.description</p>
+        <legend>Author:{author}</legend>
+        <p>Price:{price}</p>
+        <p>{description}</p>
       </div>
     </div>
   );
